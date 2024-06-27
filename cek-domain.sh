@@ -34,6 +34,6 @@ check_domain() {
 
 export -f check_domain
 
-xargs -a "$input_file" -I{} -P 10 bash -c 'check_domain "{}"' & show_animation
+xargs -a "$input_file" -I{} -P 80 bash -c 'check_domain "{}"' & show_animation
 
 echo "Done bro!. result -> hasil.txt."
